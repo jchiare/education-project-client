@@ -26,6 +26,8 @@ export class PizzaOrderForm extends Component {
       } else {
         alert(`failed with message ${JSON.stringify(data.message)}`); // send an email or sms here i guess
       }
+    } else {
+      alert(`failed with message ${data.error}`);
     }
     setSubmitting(false);
     return;
